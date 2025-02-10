@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+        body{
+            width: 100vw;
+            height: 100vh;
+        }
+        .container{
+            height: 100%;
+            width: 100%;
+            background-color: blanchedalmond;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-rows: repeat(2, 1fr);
+            grid-template-areas: 
+                "item-header item-header item-sidebar"
+                " item1 item2 item-sidebar";
+
+            gap: 1rem;
+            padding: 20px;
+
+        }
+       .item-header{
+            background-color: aqua;
+            grid-area: item-header; 
+       }
+        .item-sidebar{
+            background-color: brown;
+            grid-area: item-sidebar; 
+
+        }       
+        .item1{
+            background-color: cornflowerblue;
+            grid-area: item1;
+        }
+        .item2{
+            background-color: crimson;
+            grid-area: item2;
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="container">
+       
+        <div class="item-header ">A</div>
+        <div class="item-sidebar">B</div>
+        <div class="item1">C</div>
+        <div class="item2">D</div>
+
+    </div>
+
+
+    
+</body>
+</html>

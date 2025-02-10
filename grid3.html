@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;     
+
+        }
+        body{
+            width: 100vw;
+            height: 100vh;
+        }
+        .container{
+            height: 100%;
+            width: 100%;
+            padding: 4rem;
+            grid-template-rows: repeat(5,1fr);
+            grid-template-columns: repeat(4,1fr);
+            background-color: blanchedalmond;
+            display:grid;
+            
+            grid-template-areas: "item1 item1 item2 item3" 
+                                 "item4 item5 item6  . "
+                                 "item7 item7 item8 item9"
+                                 "item7 item7 item10 ."
+                                 "item11 item11 item11 item12";
+        }
+        .item1{
+            background-color: blueviolet;
+            border: 5px solid black;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            font-size: medium;
+            grid-area: item1;
+        }
+        .item2{
+            background-color: brown;
+            border: 5px solid black;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            font-size: medium;
+            grid-area: item2;
+        }
+        .item3{
+            background-color: chocolate;
+            border: 5px solid black;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            font-size: medium;
+            grid-area: item3;
+        }
+        .item4{
+            background-color: coral;
+            border: 5px solid black;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            font-size: medium;
+            grid-area: item4;
+        }
+        .item5{
+            background-color: cornflowerblue;
+            border: 5px solid black;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            font-size: medium;
+            grid-area: item5;
+        }
+        .item6{
+            background-color: crimson;
+            border: 5px solid black;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            font-size: medium;
+            grid-area: item6;
+        }
+        .item7{
+            background-color: darkgoldenrod;
+            border: 5px solid black;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            font-size: medium;
+            grid-area: item7;
+        }
+        .item8{
+            background-color: darkgreen;
+            border: 5px solid black;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            font-size: medium;
+            grid-area: item8;
+        }
+        .item9{
+            background-color: darkkhaki;
+            border: 5px solid black;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            font-size: medium;
+            grid-area: item9;
+        }
+        .item10{
+            background-color: darkmagenta;
+            border: 5px solid black;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            font-size: medium;
+            grid-area: item10;
+        }
+        .item11{
+            background-color: darkolivegreen;
+            border: 5px solid black;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            font-size: medium;
+            grid-area: item11;
+        }
+        .item12{
+            background-color: darkorange;
+            border: 5px solid black;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            font-size: medium;
+            grid-area: item12;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item1">A</div>
+        <div class="item2">B</div>
+        <div class="item3">C</div>
+        <div class="item4">D</div>
+        <div class="item5">E</div>
+        <div class="item6">F</div>
+        <div class="item7">G</div>
+        <div class="item8">H</div>
+        <div class="item9">I</div>
+        <div class="item10">J</div>
+        <div class="item11">K</div>
+        <div class="item12">L</div>
+    </div>
+</body>
+</html>

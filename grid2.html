@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid 2 Layout</title>
+    <STYLE>
+        
+        *{
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+
+        body{
+            width: 100vw;
+            height: 100vh;
+        }
+        .container{
+            height: 100%;
+            width: 100%;
+            padding : 1rem;
+            background-color: blanchedalmond;
+            display: grid;
+
+            grid-template-columns: repeat(4, 1fr);
+            grid-template-rows: repeat(6, 1fr);
+            grid-template-areas: "item1 item1 item3 item4"
+                                 "item1 item1 item3 item4"
+                                 
+                                 "item5 item6 item7 item8"
+                                 "item5 item6 item10 item2"
+                                 "item9 item6 item10 item2"
+                                 "item9 item6 item11 item11";
+
+            gap: 1rem   ;
+        
+
+        }
+
+        .div1{
+            background-color: aqua;
+            grid-area: item1; 
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            
+            font-size: medium;
+        }
+        .div2{
+            background-color: brown;
+            grid-area: item2; 
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            
+            font-size: medium;
+
+        }
+        .div3{
+            background-color: cornflowerblue;
+            grid-area: item3;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            
+            font-size: medium;
+        }
+        .div4{
+            background-color: crimson;
+            grid-area: item4;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            
+            font-size: medium;
+        }
+        .div5{
+            background-color: darkgoldenrod;
+            grid-area: item5;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            
+            font-size: medium;
+        }
+        .div6{
+            background-color: darkgreen;
+            grid-area: item6;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            
+            font-size: medium;
+        }
+        .div7{
+            background-color: darkkhaki;
+            grid-area: item7;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            
+            font-size: medium;
+            
+        }
+        .div8{
+            background-color: darkmagenta;
+            grid-area: item8;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            
+            font-size: medium;
+        }
+        .div9{
+            background-color: darkolivegreen;
+            grid-area: item9;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            
+            font-size: medium;
+        }
+        .div10{
+            background-color: darkorange;
+            grid-area: item10;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            
+            font-size: medium;
+        }
+        .div11{
+            background-color: darkorchid;
+            grid-area: item11;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            
+            font-size: medium;
+        }
+
+    </STYLE>
+</head>
+<body>
+    <div class="container">
+        <div class="div1">A</div>
+        <div class="div2">B</div>
+        <div class="div3">C</div>
+        <div class="div4">D</div>
+        <div class="div5">E</div>
+        <div class="div6">F</div>
+        <div class="div7">G</div>
+        <div class="div8">H</div>
+        <div class="div9">I</div>
+        <div class="div10">J</div>
+        <div class="div11">K</div>
+    </div>
+</body>
+</html>
