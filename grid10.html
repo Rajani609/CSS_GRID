@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Grid Layout with Opacity</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f4f4f4;
+        }
+
+        .container {
+            display: grid;
+            grid-template-columns: 2fr 1fr;
+            grid-template-rows: auto auto;
+            gap: 10px;
+            width: 80%;
+            max-width: 900px;
+            background-color: #1e2a38;
+            padding: 10px;
+            border-radius: 10px;
+        }
+
+        .box {
+            padding: 20px;
+            border-radius: 5px;
+        }
+
+        .header {
+            grid-column: span 2;
+            background-color: #f4a261;
+        }
+
+        .main {
+            background-color: #e76f51;
+            position: relative;
+        }
+
+        .sidebar {
+            background-color: #2a9d8f;
+            display: grid;
+            grid-template-rows: 1fr 1fr;
+            gap: 10px;
+        }
+
+        .sub-box {
+            background-color: #2a9d8f;
+            padding: 10px;
+        }
+
+        .sub-box-small {
+            background-color: #f4a261;
+            padding: 10px;
+        }
+
+        /* Overlay with Opacity */
+        .overlay {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 100px;
+            height: 100px;
+            background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent */
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .overlay img {
+            width: 60%;
+            opacity: 0.8; /* Adjust icon opacity */
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <div class="box header"></div>
+        <div class="box main">
+            <div class="overlay">
+                <img src="https://via.placeholder.com/50" alt="Icon">
+            </div>
+        </div>
+        <div class="sidebar">
+            <div class="sub-box"></div>
+            <div class="sub-box">
+                <div class="sub-box-small"></div>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
