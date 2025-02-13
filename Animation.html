@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animated layout</title>
+    <style>
+        body{
+            margin: 0px;
+            padding: 0px;
+            background-color: black;
+            display: flex;
+            justify-content: center;
+            
+        }
+        .main{
+            border-top:115px solid rgb(91, 91, 231) ;
+            border-left:115px solid rgb(241, 16, 148) ;
+            border-bottom:115px solid rgb(210, 2, 2) ;
+            border-right:115px solid rgb(175, 234, 26) ;
+            border: 50% solid black;
+            
+            height: 200px;
+            width: 200px;
+            margin-left: 60px;
+            margin-top: 60px;
+            /* transition: transform 3s ease-in-out ; */
+            animation: load 2s linear infinite ;
+                  }
+        
+        @keyframes load{
+            0%{
+                transform: rotate(0deg);
+                background-color: blueviolet;
+            }
+            20%{
+                background-color: yellow;
+            }
+            60%{
+                background-color: rgb(14, 155, 122);
+            }
+            80%{
+                background-color: rgb(148, 148, 46);
+            }
+            100%{
+                transform: rotate(180deg);
+                background-color: brown;
+            }
+        }
+
+    </style>
+</head>
+<body>
+    <div class="main"></div>
+    
+</body>
+</html>
