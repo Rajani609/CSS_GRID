@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+
+
+        }
+        .container{
+            background-color: rgb(62, 62, 60);
+            border: 5px solid black;
+            height: 100vh;
+            width: 100vw;
+            display: flex;
+           justify-content: center;
+           align-items: center;
+        }
+        .item{
+           background-image: linear-gradient(red,rgb(253, 250, 116));
+           border-radius: 50%;
+           border: 2px solid black;
+           height: 30px;
+           width: 30px;
+           animation: load 2s ease-in-out infinite alternate, rotate 2s linear infinite;
+           position: relative;
+           
+            
+        }
+        @keyframes load{
+           0%{
+            top: 0%;
+            left: 0%;
+           }
+           50%{
+            top: 50px;
+            left:50px;
+           }
+           100%{
+            top:0%;
+            left:100px;
+           }
+
+
+        }
+        @keyframes rotate{
+            0%{
+                transform: rotate(0deg);
+
+            }
+            30%{
+                transform: rotate(90deg);
+            }
+            60%{
+                transform: rotate(180deg);
+            }
+            100%{
+                transform: rotate(360deg);
+            }
+        }
+        .item1{
+           background-image: linear-gradient(red,rgb(253, 250, 116));
+           border-radius: 50%;
+           border: 2px solid black;
+           height: 30px;
+           width: 30px;
+           animation: load1 2s ease-in-out infinite alternate,rotate1 2s linear infinite;
+           position: relative;
+           margin-left:5%;
+           
+            
+        }
+        .itema{
+            background-color: ;
+           border-radius: 50%;
+           border: 2px solid black;
+           height: 30px;
+           width: 30px;
+           animation: load1 2s ease-in-out infinite alternate,rotate1 2s linear infinite;
+           position: relative;
+           margin-left:5%;
+
+        }
+        @keyframes load1{
+           0%{
+            top: 0%;
+            left: 0%;
+           }
+           50%{
+            top: 50px;
+            left:50px;
+           }
+           100%{
+            top:0%;
+            left:100px;
+           }
+
+
+        }
+        @keyframes rotate1{
+            0%{
+                transform: rotate(0deg);
+
+            }
+            30%{
+                transform: rotate(90deg);
+            }
+            60%{
+                transform: rotate(180deg);
+            }
+            100%{
+                transform: rotate(360deg);
+            }
+        }
+        .item2{
+           background-image: linear-gradient(red,rgb(253, 250, 116));
+           border-radius: 50%;
+           border: 2px solid black;
+           height: 30px;
+           width: 30px;
+           animation: load2 2s ease-in-out infinite alternate , rotate2 2s linear infinite;
+           position: relative;
+           margin-top:10%;
+           
+            
+        }
+        @keyframes load2{
+           0%{
+            top: 0%;
+            left: 0%;
+           }
+           50%{
+            top: 50px;
+            left:50px;
+           }
+           100%{
+            top:0%;
+            left:100px;
+           }
+
+
+        }
+        @keyframes rotate2{
+            0%{
+                transform: rotate(0deg);
+
+            }
+            30%{
+                transform: rotate(90deg);
+            }
+            60%{
+                transform: rotate(180deg);
+            }
+            100%{
+                transform: rotate(360deg);
+            }
+        }
+        
+        .item3{
+           background-image: linear-gradient(red,rgb(253, 250, 116));
+           border-radius: 50%;
+           border: 2px solid black;
+           height: 30px;
+           width: 30px;
+           animation: load3 2s ease-in-out infinite alternate,rotate3 2s linear infinite;
+           position: relative;
+           margin-top:10%;
+           margin-left: -10%;
+          
+
+           
+            
+        }
+        @keyframes load3{
+           0%{
+            top: 0%;
+            left: 0%;
+           }
+           50%{
+            top: 50px;
+            left:50px;
+           }
+           100%{
+            top:0%;
+            left:100px;
+           }
+
+
+        }
+        @keyframes rotate3{
+            0%{
+                transform: rotate(0deg);
+
+            }
+            30%{
+                transform: rotate(90deg);
+            }
+            60%{
+                transform: rotate(180deg);
+            }
+            100%{
+                transform: rotate(360deg);
+            }
+        }
+        
+        
+        
+
+            
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="itema"><div class="item"></div></div>
+        
+        <div class="item1"></div>
+        <div class="item2"></div>
+        <div class="item3"></div>
+
+    </div>   
+    
+    
+</body>
+</html>

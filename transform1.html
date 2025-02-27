@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>CSS Animation Example</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        body{
+             height: 100vh;
+            width: 100vw; 
+            background-image: linear-gradient(to right, rgb(214, 146, 146),rgb(187, 244, 187),rgb(243, 243, 207),rgb(194, 194, 239));
+            border: 20px solid black;
+            border-style: double;
+            
+        }
+    
+       
+        .main{
+            margin-top:12%;
+            margin-left: 40%;
+            background-color: aqua;
+           
+            
+            
+            
+        }
+        
+        .main #D1,#D2,#D3,#D4{
+            width: 250px;
+            height: 354px;
+            position: absolute;
+            transition: .3s ease-in-out;
+            cursor: pointer;
+            border-radius: 10px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 25px;
+            color: black;
+            border-style: double;
+            border-width: 10px;
+           text-align: center;
+           border-color: black;
+            
+        }
+
+        .main:hover #D1{
+            transform: translateX(-100px) rotate(-40deg);
+        }
+        .main:hover #D2{
+            transform: translateX(-50px) rotate(-30deg);
+        }
+        .main:hover #D3{
+            transform: translateX(0) rotate(-20deg);
+        }
+        .main:hover #D4{
+            transform: translateX(50px) rotate(-10deg);
+        }
+
+         #D1:hover{
+            transform : translate(-290px) rotate(0deg) scale(1.1)!important ;
+        } 
+        #D2:hover{
+            transform : translate(-260px) rotate(0deg) scale(1.1) !important ;
+        }
+        
+        #D3:hover{
+            transform : translate(-200px) rotate(0deg) scale(1.1) !important;
+            
+        }
+        
+        #D4:hover{
+            transform : translateX(50px) rotate(0deg)  !important ;
+           
+        }
+    </style>
+</head>
+<body>
+    <div class="main">  
+        <div id="D1"  style="background-color: rgb(201, 143, 175);">"Positive attitude , positive result"</div>
+        <div id="D2" style="background-color: rgb(149, 213, 223);">"Your potential is limitless , go for it"</div>
+        <div id="D3" style="background-color: rgb(230, 164, 93);">"Keep shining , your light is inspiring" </div>
+        <div id="D4" style="background-color: rgb(244, 124, 184);">"Believe in yourself,you can achieve anything"</div>
+    </div>
+</body>
+</html>
+
+
+
